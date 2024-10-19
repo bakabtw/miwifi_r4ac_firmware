@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ "$ACTION" == "ifup" ] && [ "$INTERFACE" == "guest" ] && {
+    /etc/init.d/miqos noifb_restart
+}
