@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ver=`bdata get R3A_VER`
+if [ "$ver" = "R3AC" ]; then
+    echo -e "Ver. B"
+else
+    echo -e "Ver. A"
+fi
